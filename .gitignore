@@ -1,0 +1,13 @@
+# Eclipse setting resources
+.classpath
+.project
+.settings
+
+# Maven resources
+target
+
+# Java resources
+*.class
+
+# Temp files
+*~
