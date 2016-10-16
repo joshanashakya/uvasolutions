@@ -11,3 +11,7 @@ target
 
 # Temp files
 *~
+
+.idea/*
+src/main/main.iml
+src/test/test.iml
