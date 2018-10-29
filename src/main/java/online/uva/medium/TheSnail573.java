@@ -31,12 +31,7 @@ public class TheSnail573 {
 
             initialHeight = heightAfterSlide;
 
-            if (day == 1) {
-                distanceClimbed = u;
-            } else {
-                distanceClimbed = distanceClimbed - fatigueDistance;
-            }
-            //            System.out.println(distanceClimbed);
+            distanceClimbed = u;
 
             heightAfterClimb = initialHeight + distanceClimbed;
 
@@ -52,8 +47,10 @@ public class TheSnail573 {
             heightAfterSlide = heightAfterClimb - d;
 
             if (heightAfterSlide < 0) {
+                System.out.println(heightAfterClimb);
                 break;
             }
+            u = u - fatigueDistance;
 
         }
         System.out.println(flag ? "success on day " + day : "failure on day " + day);
